@@ -106,20 +106,6 @@
     });
 
 
-    const toggleButton = document.getElementById("darkModeToggle");
-    toggleButton.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode");
-
-        const navbar = document.querySelector(".navbar");
-        if (document.body.classList.contains("dark-mode")) {
-            navbar.classList.remove("navbar-light");
-            navbar.classList.add("navbar-dark");
-            toggleButton.innerHTML = '<i class="fa fa-sun"></i>';  // Change icon to sun for light mode
-        } else {
-            navbar.classList.remove("navbar-dark");
-            navbar.classList.add("navbar-light");
-            toggleButton.innerHTML = '<i class="fa fa-moon"></i>';  // Change icon to moon for dark mode
-        }
     });
 
 
