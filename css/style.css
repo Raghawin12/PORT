@@ -139,6 +139,7 @@ a:focus {
     z-index: 999;
 }
 
+/* Sticky navbar styles */
 .navbar.nav-sticky {
     position: fixed;
     top: 0;
@@ -146,21 +147,23 @@ a:focus {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
 }
 
+/* Navbar brand styles */
 .navbar .navbar-brand {
     margin: 0;
     font-size: 45px;
-    line-height: 0px;
+    line-height: 0;
     font-weight: 700;
     letter-spacing: 2px;
     transition: .5s;
-    
 }
 
+/* Navbar brand image styles */
 .navbar .navbar-brand img {
     max-width: 100%;
     max-height: 40px;
 }
 
+/* Dropdown menu styles */
 .navbar .dropdown-menu {
     margin-top: 0;
     border: 0;
@@ -168,6 +171,48 @@ a:focus {
     background: #f8f9fa;
 }
 
+/* Light mode navbar link colors */
+.navbar-light .navbar-nav .nav-link {
+    color: #111111;
+}
+
+/* Dark mode navbar link colors */
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+/* Dark Mode Body Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Dark mode navbar links */
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+/* Dark mode active & hover link colors */
+body.dark-mode .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
+body.dark-mode .navbar-light.nav-sticky .navbar-nav .nav-link.active {
+    color: #EF233C;
+}
+
+/* Button (Icon) Styles for Dark Mode */
+#darkModeToggle {
+    margin-left: 15px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/* Button icon styles in Dark Mode */
+body.dark-mode #darkModeToggle {
+    color: #000000;
+}
+
+/* Media queries for larger screens (min-width: 992px) */
 @media (min-width: 992px) {
     .navbar {
         position: absolute;
@@ -176,7 +221,6 @@ a:focus {
         background: transparent !important;
         border-bottom: 1px dashed rgba(256, 256, 256, .2);
         z-index: 9;
-       
     }
     
     .navbar.nav-sticky {
@@ -216,6 +260,7 @@ a:focus {
     }
 }
 
+/* Media queries for smaller screens (max-width: 991.98px) */
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
